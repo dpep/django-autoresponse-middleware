@@ -1,9 +1,9 @@
-MY_NEW_PACKAGE
+django-json-middleware
 ======
 ...
 
 ### Install
-```pip install MY_NEW_PACKAGE```
+```pip install django-json-middleware```
 
 
 ### Usage
@@ -12,5 +12,5 @@ MY_NEW_PACKAGE
 ```
 
 ----
-[![Coverage Status](https://coveralls.io/repos/github/dpep/MY_NEW_REPO/badge.svg?branch=main)](https://coveralls.io/github/dpep/MY_NEW_REPO?branch=main)
-[![installs](https://img.shields.io/pypi/dm/MY_NEW_PACKAGE?label=installs)](https://pypi.org/project/MY_NEW_PACKAGE)
+[![Coverage Status](https://coveralls.io/repos/github/dpep/django-json-middleware/badge.svg?branch=main)](https://coveralls.io/github/dpep/django-json-middleware?branch=main)
+[![installs](https://img.shields.io/pypi/dm/django-json-middleware?label=installs)](https://pypi.org/project/django-json-middleware)
