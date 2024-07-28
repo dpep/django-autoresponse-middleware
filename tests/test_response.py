@@ -3,7 +3,7 @@ import json
 from django.http import HttpResponse, JsonResponse
 from django.test import RequestFactory
 
-from django_json_middleware import middleware
+from django_autoresponse_middleware import middleware
 
 
 def call_middleware(response):
