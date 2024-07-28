@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/production-ready
+      url: https://pypi.org/p/django-autoresponse-middleware
     permissions:
       id-token: write  # mandatory for trusted publishing
 
