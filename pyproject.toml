@@ -3,7 +3,7 @@ requires = ["setuptools >= 61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "MY_NEW_PACKAGE"
+name = "django-json-middleware"
 authors = [{name = "Daniel Pepper"}]
 dynamic = ["version"]
 description = "..."
@@ -14,19 +14,19 @@ classifiers = [
   'License :: OSI Approved :: MIT License',
 ]
 requires-python = ">= 3"
-dependencies = ["ambiguous"]
+dependencies = [
+  "django"
+]
 
 [project.optional-dependencies]
 test = [
   "isort >= 5.13",
   "pytest >= 8.2",
+  "pytest-django",
 ]
 
 [project.urls]
-Homepage = "https://github.com/dpep/MY_NEW_REPO"
-
-[tool.setuptools]
-packages = ["MY_NEW_PACKAGE"]
+Homepage = "https://github.com/dpep/django-json-middleware"
 
 [tool.setuptools.dynamic]
-version = {attr = "MY_NEW_PACKAGE.__version__"}
+version = {attr = "django_json_middleware.__version__"}
