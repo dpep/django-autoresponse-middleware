@@ -4,7 +4,7 @@ from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse, JsonResponse
 
 __author__ = 'dpepper'
-__version__ = '0.0.0'
+__version__ = '0.1.0'
 
 __all__ = ["encoder", "middleware"]
 
