@@ -1,6 +1,6 @@
 django-autoresponse-middleware
 ======
-...
+Django middleware to reduce the boilerplate of HttpResponse construction.  If views return strings or dicts, HttpResponse and JsonResponse objects will be automatically constructed.  Status codes and headers can also be returned.
 
 ### Install
 ```pip install django-autoresponse-middleware```
@@ -8,7 +8,27 @@ django-autoresponse-middleware
 
 ### Usage
 ```python
-...
+
+MIDDLEWARE = [
+    ...,
+    'django_autoresponse_middleware.middleware',  # must be last
+]
+```
+
+
+#### Simplified Django views
+```python
+
+def index(request):
+    return "hello world!"
+
+
+def unauthorized(request):
+    return "unauthorized", 400
+
+
+def ping(request):
+    return {"message": "pong"}, 200, {"MY-RESPONSE-HEADER": "abc"}
 ```
 
 ----
